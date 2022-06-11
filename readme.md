@@ -14,4 +14,15 @@ Cuando queremos definir una configuracion de manera general, debemos utilizar el
 
 ## Gestion del proyecto
 
-Para sincronizar los cambios realizados en el proyecto, debemos tener en cuenta que si creamos en nuestra computadora el mismo utilizando el comando *git init*, debemos crearlo tambien en nuestro servidor remoto, como por ejemplo [GitHub](https://github.com)
+Para sincronizar los cambios realizados en el proyecto debemos tener en cuenta que si creamos en nuestra computadora el mismo utilizando el comando *git init*, vamos a tener que crearlo tambien en nuestro servidor remoto, como por ejemplo [GitHub](https://github.com).
+
+En caso que ya exista un repositorio remoto, simplemente debemos descargar el historial de cambios del mismo, pero indistintamente de como hayamos empezamos, lo principal es estar pendiente de los cambios realizados en el servidor de GIT.
+
+## Acceso por primera vez
+* **git clone `remote` `folder`**: Crea una carpeta en donde se descargara el contenido del respositorio.
+* **cd `folder`**: Abre la carpeta creada utilizando el comando git clone.
+
+## Sincronizacion de cambios
+* **git fetch `remote`**: Descarga el historial de cambios del respositorio.
+* **git pull `remote` `branch`**: Descarga los cambios y los integra a la rama actual.
+* **git push `remote` `branch`**: Envia los cambios locales al respositorio remoto.
