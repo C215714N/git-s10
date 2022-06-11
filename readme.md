@@ -4,10 +4,14 @@ Esto es una guia creada con la finalidad de facilitar el entendimiento y aplicac
 
 ## Configuracion Inicial
 
-Cuando inicializamos un repositorio por primera vez, podemos establecer el nombre de usuario y correo electronico, para identificarnos dentro del historial de cambios. 
+Cuando inicializamos un repositorio por primera vez, podemos establecer el nombre de usuario y correo electronico, para identificarnos dentro del historial de cambios.
 
 Cuando queremos definir una configuracion de manera general, debemos utilizar el parametro *--global* para indicar que dicha configuracion debe almacenarse en la carpeta del usuario y no en la carpeta *.git/* del repositorio.
 
 * **git init**: Inicializa un repositorio de git.
 * **git config --global user.name** `username`: Define el nombre de usuario para el control de cambios.
 * **git config --global user.email** `email`: Establece el correo electronico para las confirmaciones.
+
+## Gestion del proyecto
+
+Para sincronizar los cambios realizados en el proyecto, debemos tener en cuenta que si creamos en nuestra computadora el mismo utilizando el comando *git init*, debemos crearlo tambien en nuestro servidor remoto, como por ejemplo [GitHub](https://github.com)
