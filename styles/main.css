@@ -87,6 +87,13 @@
         font-size: min(calc(2vw + .8rem), 3rem);
         background: radial-gradient(circle at center, #eee, #ccc);
     }
+    .header{
+        margin: -1rem -1rem 1rem;
+        padding: 1rem;
+        color: #eee;
+        font-size: min(calc(2vw + .5rem), 2rem);
+        background:  linear-gradient(to right, #c26, #448);
+    }
     /* Contenido */
 
     /* Pie de Pagina */
