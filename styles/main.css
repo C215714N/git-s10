@@ -118,16 +118,21 @@
     /* Tabla Colaboradores */
     .colabs{
         margin: 1rem auto;
+        border-collapse: collapse;
     }
     .colabs :is(
         caption,
         th,
         td
     ){
+        border: 2px solid #c26;
         padding: .5rem 1rem;
     }
     .colabs caption{
         border-radius: .25rem .25rem 0 0;
+        border-bottom: none;
+        color: #eee;
+        background-color: #c26;
     }
     /* Redes sociales */
 
