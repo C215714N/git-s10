@@ -5,3 +5,7 @@ const menuLst = d.querySelector('nav .menu');
 
 // Navegacion
 menuBtn.onclick = () => menuLst.classList.toggle('active')
+
+// Mapa de Contacto
+
+// Formulario de contacto
