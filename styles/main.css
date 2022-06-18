@@ -129,6 +129,15 @@
     .colabs caption{
         border-radius: .25rem .25rem 0 0;
     }
+    .colabs,
+    .colabs :is(
+        caption,
+        tr,
+        td
+    ){
+        color: #eee;
+        background-color: rgba(68,68,136,.5);
+    }
     /* Redes sociales */
 
     /* Formulario de Contacto */
