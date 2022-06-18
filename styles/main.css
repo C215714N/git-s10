@@ -78,7 +78,15 @@
         text-transform: uppercase;
     }
     /* Cabecera */
-
+    #header{
+        min-height: min(640px, 100vh);
+        display: grid;
+        align-content: center;
+        padding: 1rem;
+        text-align: center;
+        font-size: min(calc(2vw + .8rem), 3rem);
+        background: radial-gradient(circle at center, #eee, #ccc);
+    }
     /* Contenido */
 
     /* Pie de Pagina */
