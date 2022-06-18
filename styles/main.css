@@ -118,6 +118,10 @@
     /* Tabla Colaboradores */
     .colabs{
         margin: 1rem auto;
+        border-collapse: collapse;
+        color: #eee;
+        background: linear-gradient(#c26, #448);
+        text-align: left;
     }
     .colabs :is(
         caption,
@@ -128,6 +132,13 @@
     }
     .colabs caption{
         border-radius: .25rem .25rem 0 0;
+        background-color: #c26;
+    }
+    .colabs tbody tr:nth-child(odd){
+        background-color: #eee3;
+    }
+    .colabs tbody tr:nth-child(even){
+        background-color: #9993;
     }
     /* Redes sociales */
 
