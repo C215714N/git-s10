@@ -44,6 +44,12 @@
     }
     nav a{
         color: #eee;
+        font-weight: bold;
+    }
+    .menu a.active,
+    .menu a:hover{
+        color: #fff;
+        text-shadow: 0 0 .5rem #eee;
     }
     .menu{
         position: fixed;
