@@ -6,18 +6,22 @@ const mapBtn = d.querySelector('.map .btn');
 const mapFrm = d.querySelector('.map .cover');
 
 // Navegacion
-menuBtn.onclick = () => {
+const toggleMenu = () => {
     menuLst.classList.toggle('active') ? 
     menuBtn.innerHTML = '&times;' :
     menuBtn.innerHTML = '&equiv;' 
 }
 
+menuBtn.onclick = toggleMenu();
+
 // Mapa de Contacto
-mapBtn.addEventListener('click', () => {
+function toggleMap() {
     if (mapFrm.classList.toggle('active')){
         mapBtn.classList.replace('icon-max','icon-min')
     } else {
         mapBtn.classList.replace('icon-min','icon-max')
     }
-}   )
+}
+mapBtn.addEventListener('click', () => toggleMap() );
+
 // Formulario de contacto
