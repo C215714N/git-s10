@@ -20,15 +20,19 @@
             border: none;
         }
         /* Rellenos */
-        .menu{
+        .menu,
+        .content-table,
+        .content-table :is(ol, ul){
             padding: 0;
         }
         /* Estilos */
         nav a,
+        .content-table a,
         #footer a{
             text-decoration: none;
         }
-        .menu{
+        .menu,
+        .content-table li{
             list-style: none;
         }
     /* Navegacion */
@@ -106,7 +110,25 @@
         background:  linear-gradient(to right, #c26, #448);
     }
     /* Tabla de Contenidos */
-    
+    .content-table{
+        padding: 1rem;
+        counter-reset: first;
+    }
+    .content-table ul{
+        counter-reset: second;
+    }
+    .content-table li{
+        counter-increment: first;
+        border-top: 1px solid #333;
+    }
+    .content-table li li{
+        counter-increment: second;
+    }
+    .content-table li::before{
+        content: 
+            counter(first) '.'
+            counter(second) ' - ';
+    }
     /* Contenido */
 
     /* Pie de Pagina */

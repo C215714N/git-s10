@@ -26,9 +26,33 @@
         <p>Desarrollo Colaborativo</p>
     </header>
     <!-- Tabla de Contenidos -->
-    
+    <ol class="content-table">
+        <li><a href="#areas">Areas de GIT</a>
+            <ul>
+                <li>Working Directory</li> 
+                <li>Staging Area</li>
+                <li>Repository (Local/Remote)</li>
+            </ul>
+        </li>
+        <li><a href="#refs">Apuntadores de GIT</a>
+            <ul>
+                <li>HEAD</li>
+                <li>BRANCH</li>
+                <li>STASH</li>
+                <li>TAG</li>
+            </ul>
+        </li>
+        <li><a href="#control">Control de Cambios</a>
+            <ul>
+                <li>RESTORE</li>
+                <li>RESET</li>
+                <li>REVERT</li>
+                <li>BISECT</li>
+            </ul>
+        </li>
+    </ol>
     <!-- Contenido -->
-    <section>
+    <section id="areas">
         <h2>Areas de GIT</h2>
         <article>
             <h3>Working Directory</h3>
@@ -49,7 +73,7 @@
             </p>
         </article>
     </section>
-    <section>
+    <section id="refs">
         <h2>Apuntadores de GIT</h2>
         <article>
             <h2>HEAD</h2>
@@ -75,6 +99,9 @@
                 Apuntador estatico que hace referencia al commit donde se aplico, se utiliza para facilitar la navegacion dentro del historial de confirmaciones y para el versionado del proyecto. El formato suele ser <em>"vn.m.r"</em> donde n es la version principal, m la subversion que indica caracteristicas o compilacion y r corresponde a las revisiones o correcciones de errores dentro del codigo.
             </p>
         </article>
+    </section>
+    <section id="control">
+
     </section>
     <!-- Pie de Pagina -->
     <footer id="footer">
