@@ -76,32 +76,56 @@
     <section id="refs">
         <h2>Apuntadores de GIT</h2>
         <article>
-            <h2>HEAD</h2>
+            <h3>HEAD</h3>
             <p>
                 Apuntador movil que indica donde nos encontramos dentro del historial de confirmaciones, se utiliza para navegar dentro del mismo y como referencia al momento de realizar comparaciones con los commits emitidos con anterioridad. Por defecto se ubica en la ultima confirmacion emitida de la rama actual.
             </p>
         </article>
         <article>
-            <h2>BRANCH</h2>
+            <h3>BRANCH</h3>
             <p>
                 Apuntador Dinamico que siempre se corresponde con el ultimo commit de la linea de tiempo en la que nos encontramos trabajando, se utiliza para implementar nuevas caracteristicas, corregir o revisar problemas en el proyecto e incluso realizar diferentes propuestas, sin comprometer la historia principal.
             </p>
         </article>
         <article>
-            <h2>STASH</h2>
+            <h3>STASH</h3>
             <p>
                 Apuntador de la zona temporal de cambios que se utiliza principalmente cuando tenemos cambios que no ameritan un commit, y necesitamos movernos en el historial de confirmaciones. Al aplicar el comando se almacenan los cambios una referencia temporal que apunta al Staging Area y al commit donde nos encontramos.
             </p>
         </article>
         <article>
-            <h2>TAG</h2>
+            <h3>TAG</h3>
             <p>
                 Apuntador estatico que hace referencia al commit donde se aplico, se utiliza para facilitar la navegacion dentro del historial de confirmaciones y para el versionado del proyecto. El formato suele ser <em>"vn.m.r"</em> donde n es la version principal, m la subversion que indica caracteristicas o compilacion y r corresponde a las revisiones o correcciones de errores dentro del codigo.
             </p>
         </article>
     </section>
     <section id="control">
-
+        <h2>Control de Cambios</h2>
+        <article>
+            <h3>RESTORE</h3>
+            <p>
+                Este comando permite reestablecer cualquier archivo a como se encontraba en la ultima captura realizada y en caso que no se haya hecho el <em>git add</em> correspondiente utiliza el ultimo commit de referencia. Tambien podemos utilizarlo para quitar capturas del <strong>Staging Area (INDEX)</strong> si utilizamos el parametro <em>--staged</em>.
+            </p>
+        </article>
+        <article>
+            <h3>RESET</h3>
+            <p>
+                Este comando elimina los commits desde el ultimo hasta la referencia seleccionada y por defecto el parametro <em>--soft</em> viene implicito en el mismo, estos cambios en el historial no afectan a las otras areas. En caso que necesitemos reestablecer por completo el proyecto podemos utilizar el parametro <em>--hard</em>, teniendo en cuenta que sera practico si no existen los cambios en el repositorio remoto.
+            </p>
+        </article>
+        <article>
+            <h3>REVERT</h3>
+            <p>
+                Este comando genera un commit con las operaciones contrarias al commit seleccionado, ideal para cuando los cambios se encuentran en el repositorio remoto y necesitamos deshacer una parte del historial y no todos los commits correspondientes. En caso de conflicto, la operacion se detendra y deberemos resolver el mismo para proceder.
+            </p>
+        </article>
+        <article>
+            <h3>BISECT</h3>
+            <p>
+                Esta herramienta permite el analisis binario de los commits del proyecto, bastante util para detectar commits en los que hayan introducido errores en el codigo. Simplemente debemos indicar cual de las confirmacion contiene dicho error <em>bisect bad</em> y cual es la ultima version funcional <em>bisect good</em>, para que git recorra los commits y consulta si el codigo es funcional.
+            </p>
+        </article>
     </section>
     <!-- Pie de Pagina -->
     <footer id="footer">
